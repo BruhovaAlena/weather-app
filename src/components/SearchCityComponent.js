@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import React from 'react';
+import logo from '../icons/perfect-day.svg';
 
 const StyledDiv = styled.div`
   border: 1px solid pink;
@@ -60,7 +61,7 @@ const SearchCityComponent = ({ onCityChange, onGetData }) => {
   return (
     <>
       <StyledDiv>
-        <WeatherLogo src="/icons/perfect-day.svg" />
+        <WeatherLogo src={logo} />
       </StyledDiv>
       <ChooseCityLabel>Find Weather of your city </ChooseCityLabel>
       <SearchBox onSubmit={onGetData}>

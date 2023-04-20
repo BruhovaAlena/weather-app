@@ -1,29 +1,42 @@
 import styled from 'styled-components';
 import React from 'react';
+import pressure from '../icons/pressure.svg';
+import temp from '../icons/temp.svg';
+import humidity from '../icons/humidity.svg';
+import wind from '../icons/wind.svg';
+import sunny from '../icons/sunny.svg';
+import night from '../icons/night.svg';
+import day from '../icons/day.svg';
+import cloudyNight from '../icons/cloudy-night.svg';
+import cloudy from '../icons/cloudy.svg';
+import perfectDay from '../icons/perfect-day.svg';
+import rain from '../icons/rain.svg';
+import rainNight from '../icons/rain-night.svg';
+import storm from '../icons/storm.svg';
 
 export const WeatherInfoIcons = {
-  sunset: '/icons/temp.svg',
-  sunrise: '/icons/temp.svg',
-  humidity: '/icons/humidity.svg',
-  wind: '/icons/wind.svg',
-  pressure: '/icons/pressure.svg',
+  sunset: temp,
+  sunrise: temp,
+  humidity: humidity,
+  wind: wind,
+  pressure: pressure,
 };
 
 export const WeatherImg = {
-  '01d': '/icons/sunny.svg',
-  '01n': '/icons/night.svg',
-  '02d': '/icons/day.svg',
-  '02n': '/icons/cloudy-night.svg',
-  '03d': '/icons/cloudy.svg',
-  '03n': '/icons/cloudy.svg',
-  '04d': '/icons/perfect-day.svg',
-  '04n': '/icons/cloudy-night.svg',
-  '09d': '/icons/rain.svg',
-  '09n': '/icons/rain-night.svg',
-  '10d': '/icons/rain.svg',
-  '10n': '/icons/rain-night.svg',
-  '11d': '/icons/storm.svg',
-  '11n': '/icons/storm.svg',
+  '01d': sunny,
+  '01n': night,
+  '02d': day,
+  '02n': cloudyNight,
+  '03d': cloudy,
+  '03n': cloudy,
+  '04d': perfectDay,
+  '04n': cloudyNight,
+  '09d': rain,
+  '09n': rainNight,
+  '10d': rain,
+  '10n': rainNight,
+  '11d': storm,
+  '11n': storm,
 };
 
 const WeatherCondition = styled.div`
